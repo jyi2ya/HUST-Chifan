@@ -11,6 +11,8 @@ use Mojo::UserAgent;
 use Data::Dumper;
 use DDP;
 
+$Data::Dumper::Sortkeys = 1;
+
 my $ua = Mojo::UserAgent->new;
 
 my $dom = $ua->get('http://hq.hust.edu.cn/ysfw/stfw.htm')->result->dom;
